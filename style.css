@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Text", sans-serif;
+  margin-top: 5rem;
+  margin-left: 37rem;
+}
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --rgb: (236, 232, 232);
+  /* --rgba: (0, 0, 0, 0.2); */
+}
+.card {
+  height: 35rem;
+  width: 23rem;
+  margin-top: 2rem;
+  border: 1px solid rgb(236, 232, 232);
+  align-items: center;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card__image {
+  border-radius: 7px 7px 0 0;
+}
+.card__text {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: var(--Darkblue);
+}
+.card__paragraph {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 1rem;
+  color: var(--Desaturatedblue);
+}
+.flex-container {
+  display: flex;
+  margin-left: 1.8rem;
+  height: 4rem;
+  width: 19rem;
+  background-color: var(--Verypaleblue);
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+}
+.flex-container .music-pic {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.card__money {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+div a {
+  top: 3rem;
+  text-decoration: none;
+}
+#card-change {
+  margin-top: 1.2rem;
+}
+.card__button {
+  height: 2.5rem;
+  width: 18rem;
+  /* margin-left: 0.5rem; */
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: white;
+  color: white;
+}
+.btn-pay {
+  background-color: var(--Brightblue);
+}
+.btn-order {
+  background-color: var(--Paleblue);
+  color: var(--Darkblue);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg) no-repeat
+      center/cover;
+  }
+
+  .card {
+    position: fixed;
+
+    justify-content: flex-start;
+    top: 5rem;
+    right: 10%;
+  }
+  .card__button {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) no-repeat
+      center/cover;
+  }
+  .card {
+    position: fixed;
+    margin-top: 4rem;
+
+    text-align: center;
+  }
+}
